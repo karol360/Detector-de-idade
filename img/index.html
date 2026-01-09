@@ -9,17 +9,30 @@
     <script src="index.js"></script>
 </head>
 
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
-        <div id="mensagem">
-            aqui vai ser a mensagem
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="blocoano" id="blocoano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="blocosexo" id="blocosexo">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="blocosexo" id="blocosexo">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="varificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="foto">
-            <img src="./img/manha.avif" alt="manha" id="imagem">
+
+
+        <div>
+            preencha para ver o resultado!
         </div>
     </section>
 
